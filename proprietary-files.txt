@@ -1,11 +1,11 @@
-# all unpinned blobs come from SM-G390F stock (9.0)
+# all unpinned blobs come from SM-G390F stock (9.0 G390FXXU6CTG3)
 
 # Bluetooth
 # vendor/firmware/bcm43455_V0147_0248.hcd
 
 # Camera
-# lib/hw/camera.universal7570.so:lib/hw/camera.vendor.universal7570.so
-# lib/libexynoscamera.so
+lib/hw/camera.universal7570.so:lib/hw/camera.vendor.universal7570.so
+lib/libexynoscamera.so
 vendor/firmware/setfile_3l2.bin
 vendor/firmware/setfile_5e3.bin
 
@@ -39,13 +39,12 @@ app/mcRegistry/ffffffff000000000000000000000045.tlbin:vendor/app/mcRegistry/ffff
 app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
 app/mcRegistry/ffffffffd00000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 
-
-# RIL from a3xeltexx (A310FXXU4CSB2)
+# RIL
 vendor/lib/libsec-ril.so
 vendor/lib/libsec-ril-dsds.so
 
 # Sensors
-#lib/hw/sensors.universal7570.so
+vendor/lib/hw/sensors.universal7570.so
 #lib/libinvensense_hal.so
 #lib/libmllite.so
 #lib/libmplmpu.so
@@ -65,7 +64,7 @@ vendor/lib/libsec-ril-dsds.so
 # NFC
 #etc/sec_s3fwrn7_rfreg.bin
 #lib/hw/nfc_nci.universal7570.so
-#vendor/firmware/sec_s3fwrn7_firmware.bin
+vendor/firmware/nfc/libpn548ad_fw.so
 
 # cbd, from boot.img and pinned to stop removal when extracting from system image
 bin/cbd:vendor/bin/cbd
