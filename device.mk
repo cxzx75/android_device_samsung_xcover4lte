@@ -101,10 +101,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.samsung.permission.HRM_EXT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.samsung.permission.HRM_EXT.xml \
     $(LOCAL_PATH)/configs/permissions/com.samsung.permission.SSENSOR.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.samsung.permission.SSENSOR.xml
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Radio
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
