@@ -85,12 +85,12 @@ void vendor_load_properties()
 	std::string bootloader = GetProperty("ro.bootloader", "");
 	std::string device;
 
-	if (bootloader.find("G903F") != std::string::npos) {
-		/* SM-G903F */
-		property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/xcover4ltexx/xcover4lte:6.0.1/MMB29K/G903FXXU1BQC1:user/release-keys");
-		property_override("ro.system.build.fingerprint", "samsung/xcover4ltexx/xcover4lte:6.0.1/MMB29K/G903FXXU1BQC1:user/release-keys");
-		property_override("ro.build.description", "xcover4ltexx-user 6.0.1 MMB29K G903FXXU1BQC1 release-keys");
-		property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G903F");
+	if (bootloader.find("G390F") != std::string::npos) {
+		/* SM-G390F */
+		property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/xcover4ltexx/xcover4lte:9/PPR1.180610.011/G390FXXU6CTG3:user/release-keys");
+		property_override("ro.system.build.fingerprint", "samsung/xcover4ltexx/xcover4lte:9/PPR1.180610.011/G390FXXU6CTG3:user/release-keys");
+		property_override("ro.build.description", "xcover4ltexx-user 9 PPR1.180610.011 G390FXXU6CTG3 release-keys");
+		property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G390F");
 		property_override_dual("ro.product.device", "ro.vendor.product.device", "xcover4lte");
 		property_override("ro.product.name", "xcover4ltexx");
 	}
